@@ -1,0 +1,14 @@
+Group:
+	unrestricted:
+		Title: Unrestricted
+	restricted-singleip:
+		Title: Restricted
+		# Lets hope nobody from Apple is ever going to test with that local IP....
+		IPRestrictions: 17.0.0.1
+Member:
+	unrestricted:
+		FirstName: Unrestricted
+		Groups: =>Group.unrestricted
+	restricted-singleip:
+		FirstName: Restricted
+		Groups: =>Group.unrestricted,=>Group.restricted-singleip
