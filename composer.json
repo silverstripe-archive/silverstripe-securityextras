@@ -1,0 +1,16 @@
+{
+	"name": "silverstripe-labs/securityextras",
+	"description": "A loose collection of tools to further lock down a SilverStripe installation.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe-labs", "securityextras"],
+	"authors": [
+	{
+		"name": "Sam Minnée",
+		"email": "sam@silverstripe.com"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "3.*"
+	}
+}
