@@ -17,9 +17,10 @@ Will be enforced when a `Member` record is saved, through `Member->validate()`.
 The underlying password validation is a core feature, so can be easily adapted
 to other validation standards.
 
-	:::php
+```php
 	// in mysite/_config.php
-	Member::set_password_validator('NZGovtPasswordValidator');
+	Member::set_password_validator(new NZGovtPasswordValidator());
+```
 
 ## Maintainers
 
