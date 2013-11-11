@@ -1,13 +1,9 @@
 <?php
 class IpAddressRestrictedGroup extends DataExtension {
 
-	function extraStatics() {
-		return array(
-			'db' => array(
-				"IPRestrictions" => "Text",
-			)
-		);
-	}
+	private static $db = array(
+		"IPRestrictions" => "Text"
+	);
 
 	/**
 	 * Returns true if the given IP address is granted access to this group.
@@ -31,7 +27,7 @@ class IpAddressRestrictedGroup extends DataExtension {
 		return false;
 	}
 
-	function updateCMSFields(&$fields) {
+	function updateCMSFields(FieldList $fields) {
 		$fields->findOrMakeTab('Root.IPAddresses', _t('Security.IPADDRESSES', 'IP Addresses'));
 		$fields->addFieldsToTab(
 			'Root.IPAddresses',
