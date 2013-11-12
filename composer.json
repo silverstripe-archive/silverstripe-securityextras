@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe-labs/securityextras",
+	"name": "silverstripe/securityextras",
 	"description": "A loose collection of tools to further lock down a SilverStripe installation.",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe-labs", "securityextras"],
