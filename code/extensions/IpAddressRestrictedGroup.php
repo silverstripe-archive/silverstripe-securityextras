@@ -1,7 +1,7 @@
 <?php
 class IpAddressRestrictedGroup extends DataExtension {
 
-	function extraStatics() {
+	function extraStatics($class = null, $extension = null) {
 		return array(
 			'db' => array(
 				"IPRestrictions" => "Text",
@@ -31,7 +31,7 @@ class IpAddressRestrictedGroup extends DataExtension {
 		return false;
 	}
 
-	function updateCMSFields(&$fields) {
+	function updateCMSFields(FieldList $fields) {
 		$fields->findOrMakeTab('Root.IPAddresses', _t('Security.IPADDRESSES', 'IP Addresses'));
 		$fields->addFieldsToTab(
 			'Root.IPAddresses',
