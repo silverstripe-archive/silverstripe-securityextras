@@ -1,0 +1,6 @@
+Group:
+  extensions:
+    - 'IpAddressRestrictedGroup'
+Member:
+  extensions:
+    - 'IpAddressRestrictedMember'
